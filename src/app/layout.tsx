@@ -1,4 +1,5 @@
 import './globals.css';
+import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import { Logo, SearchBar } from '@/components';
 
@@ -15,7 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={`${inter.className} bg-gray-l4`}>
 				<header className='py-10'>
 					<h1 className='flex flex-col items-center justify-center text-lg'>
-						<Logo />
+						<Link href='/'>
+							<Logo />
+						</Link>
 						<strong className='font-semibold tracking-wider text-black/80'>Ofertas con tus lenguajes favoritos</strong>
 					</h1>
 				</header>

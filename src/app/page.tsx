@@ -1,7 +1,7 @@
-import { Card } from '@/components';
+import { HomeCard } from '@/components';
 
 async function Home() {
-	return <Card />;
+	return <HomeCard />;
 }
 
 export default Home;
