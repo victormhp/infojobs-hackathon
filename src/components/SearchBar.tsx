@@ -16,8 +16,8 @@ function SearchBar() {
 
 	const handleClick = (event: MouseEvent) => {
 		event.preventDefault();
+		if (!search) return;
 		router.push(`/user/${search}`);
-		// router.push(`/?search=${search}`);
 	};
 
 	return (
@@ -26,7 +26,7 @@ function SearchBar() {
 				<div className='relative flex items-center'>
 					<GithubIcon />
 					<input
-						className='py-2 pr-3 pl-10 rounded border border-gray-l2'
+						className='w-full py-2 pr-3 pl-10 rounded border border-gray-l2'
 						id={searchID}
 						type='search'
 						value={search}
