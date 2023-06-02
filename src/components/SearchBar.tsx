@@ -17,7 +17,7 @@ function SearchBar() {
 	const handleClick = (event: MouseEvent) => {
 		event.preventDefault();
 		if (!search) return;
-		router.push(`/user/${search}`);
+		router.push(`/${search}`);
 	};
 
 	return (

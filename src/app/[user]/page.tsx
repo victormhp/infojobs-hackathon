@@ -1,5 +1,5 @@
 import { Card, Flex, Title, Badge, Table, TableHead, TableRow, TableHeaderCell, TableBody, TableCell, Text } from '@tremor/react';
-import { getLanguages, getOffers } from '@/app/user/[user]/services';
+import { getLanguages, getOffers } from './services';
 import { TableButton, Languages } from '@/components';
 import { Fragment } from 'react';
 
